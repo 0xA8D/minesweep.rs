@@ -7,7 +7,8 @@ Toy program as Rust demo.
 
 Then enter "row col <flag>" to probe cells:
 
-`Terminal Minesweeper!
+```
+Terminal Minesweeper!
 Do you feel lucky? Well, do ya, cypherpunk?
 
             11111
@@ -76,4 +77,4 @@ Enter "row col" to probe, or "row col F" to toggle flag.
  8 1x212x11x21
  9 112x211111
 10   111
-`
+```
