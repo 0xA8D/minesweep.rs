@@ -3,6 +3,7 @@ extern crate rand;
 
 use rand::{thread_rng, Rng};
 use std::fmt;
+use std::io::Write;
 
 const MIN_DIMENSION: isize = 8;
 const MAX_DIMENSION: isize = 16;
@@ -211,8 +212,8 @@ fn main() {
 
     loop {
         println!("{}", board);
-        println!("Enter \"row col\" to probe, or \"row col F\" to toggle flag.\n"
-        );
+        print!("Enter \"row col\" to probe, or \"row col F\" to toggle flag.\n> ");
+        io::stdout().flush().ok().expect("Could not flush stdout");
 
         use std::io;
         let mut input = String::new();
