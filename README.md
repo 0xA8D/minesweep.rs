@@ -1,6 +1,6 @@
 # minesweep.rs - Terminal Minesweeper
 
-Toy program as Rust demo.
+Toy program as a Rust demo.
 
 ## How to Play
 `cargo run --release`
